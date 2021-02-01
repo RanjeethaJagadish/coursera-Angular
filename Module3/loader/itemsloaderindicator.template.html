@@ -1,0 +1,11 @@
+ <ul class="list-group"  >
+    <li class="list-group-item" ng-repeat="items in list.itemlist.menu_items">
+      <div class="container-sm">
+  {{ items.name }},
+  </div>
+  {{ items.short_name }},
+  {{ items.description }}
+      <button ng-click = "list.onremove($index);">Don't want this one!</button>
+    </li>
+  </ul>
+  <!-- {{ items.name }} -->
